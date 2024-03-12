@@ -117,12 +117,15 @@ makeItClickable()
        */
 
 const revealFooterLink = function () {
-    const footerLink = document.querySelector("footer a")
-    if (footerLink) {
-        footerLink.addEventListener()
-    }
+  const footerLink = document.querySelector("footer a")
+  if (footerLink) {
+    footerLink.addEventListener("click", function (event) {
+      event.preventDefault()
+      alert("URL del footer: " + footerLink.href)
+    })
+  }
 }
-// revealFooterLink()
+revealFooterLink()
 
 /* ESERCIZIO 11
         Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
@@ -146,5 +149,5 @@ const hideAllImages = function () {}
 /* EXTRA ESERCIZIO 15
        Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
      */
-
-const changeColorWithRandom = function () {}
+    
+    const getRandomColor = function () {}
